@@ -3,8 +3,8 @@ CFLAGS=-c -Wall -pedantic
 
 all: shell
 
-shell: problem3.o problem2.o problem1.o shell.o
-	$(CC) shell.o problem1.o problem2.o problem3.o -o ProjectEulerShell
+shell: problem4.o problem3.o problem2.o problem1.o shell.o
+	$(CC) shell.o problem1.o problem2.o problem3.o problem4.o -o ProjectEulerShell
 
 shell.o: shell.cpp
 	$(CC) $(CFLAGS) shell.cpp
@@ -17,6 +17,9 @@ problem2.o: problem2.cpp
 
 problem3.o: problem3.cpp
 	$(CC) $(CFLAGS) problem3.cpp
+
+problem4.o: problem4.cpp
+	$(CC) $(CFLAGS) problem4.cpp
 
 clean:
 	rm *o *out ProjectEulerShell
