@@ -1,6 +1,5 @@
 #include "common.h"
-namespace prob1 {
-	#define X 999
+namespace prob2 {
 	void main();
 }
 

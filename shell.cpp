@@ -44,10 +44,18 @@ int getProblemToRun() {
 }
 
 void runProblemSolution(int probNum) {
+	time_t startTime,endTime;
+	time(&startTime);
+
 	switch(probNum) {
 		case 1 : prob1::main();
+			break;
+		case 2 : prob2::main();
 			break;
 		default : cout << "Not mapped" << endl;
 			break;
 	}
+
+	time(&endTime);
+	cout << "Time passed: " << difftime(endTime,startTime) << "ms" << endl;
 }

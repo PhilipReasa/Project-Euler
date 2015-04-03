@@ -1,7 +1,9 @@
 #include "common.h"
-#define LAST_PROBLEM_DONE 1
+#include "time.h"
+#define LAST_PROBLEM_DONE 5
 
 #include "problem1.h"
+#include "problem2.h"
 
 int main();
 void displayInitialInfo();
