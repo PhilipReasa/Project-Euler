@@ -1,10 +1,10 @@
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-c -Wall -pedantic
 
 all: shell
 
-shell: problem2.o problem1.o shell.o
-	$(CC) shell.o problem1.o problem2.o -o ProjectEulerShell
+shell: problem3.o problem2.o problem1.o shell.o
+	$(CC) shell.o problem1.o problem2.o problem3.o -o ProjectEulerShell
 
 shell.o: shell.cpp
 	$(CC) $(CFLAGS) shell.cpp
@@ -14,6 +14,9 @@ problem1.o: problem1.cpp
 
 problem2.o: problem2.cpp
 	$(CC) $(CFLAGS) problem2.cpp
+
+problem3.o: problem3.cpp
+	$(CC) $(CFLAGS) problem3.cpp
 
 clean:
 	rm *o *out ProjectEulerShell

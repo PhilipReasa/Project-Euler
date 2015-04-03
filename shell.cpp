@@ -52,6 +52,8 @@ void runProblemSolution(int probNum) {
 			break;
 		case 2 : prob2::main();
 			break;
+		case 3 : cout << largestPrimeFactor(600851475143) << endl;
+			break; 
 		default : cout << "Not mapped" << endl;
 			break;
 	}
