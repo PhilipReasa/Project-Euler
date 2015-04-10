@@ -6,6 +6,7 @@
 #include "problem2.h"
 #include "problem3.h"
 #include "problem4.h"
+#include "problem5.h"
 
 int main();
 void displayInitialInfo();
