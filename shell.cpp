@@ -8,7 +8,9 @@ int main() {
 	displayInitialInfo();
 
 	problemNumber=getProblemToRun();
-	runProblemSolution(problemNumber);
+	if (problemNumber != -1) {
+		runProblemSolution(problemNumber);
+	}
 	
 	displayFinalInfo();
 	return 0;
@@ -57,6 +59,12 @@ void runProblemSolution(int probNum) {
 		case 4 : prob4::main();
 			break;
 		case 5 : prob5::main();
+			break;
+		case 6 : prob6::main();
+			break;
+		case 7 : prob7::main();
+			break;
+		case 8 : prob8::main();
 			break;
 		default : cout << "Not mapped" << endl;
 			break;
