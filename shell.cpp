@@ -66,6 +66,10 @@ void runProblemSolution(int probNum) {
 			break;
 		case 8 : prob8::main();
 			break;
+		case 9 : prob9::main();
+			break;
+		case 10 : prob10::main();
+			break;
 		default : cout << "Not mapped" << endl;
 			break;
 	}
