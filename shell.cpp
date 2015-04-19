@@ -70,10 +70,20 @@ void runProblemSolution(int probNum) {
 			break;
 		case 10 : prob10::main();
 			break;
+		case 11 : prob11::main();
+			break;
+		case 12 : prob12::main();
+			break;
+		case 13 : prob13::main();
+			break;
+		case 14 : prob14::main();
+			break;
+		case 15 : prob15::main();
+			break;
 		default : cout << "Not mapped" << endl;
 			break;
 	}
 
 	time(&endTime);
-	cout << "Time passed: " << difftime(endTime,startTime) << "ms" << endl;
+	cout << "Time passed: " << difftime(endTime,startTime)<< "s" << endl;
 }
