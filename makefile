@@ -3,8 +3,8 @@ CFLAGS=-c -std=c++11 -Wall -pedantic
 
 all: shell
 
-shell: problem15-20.o problem14.o problem13.o problem12.o problem11.o problem10.o problem9.o problem8.o problem7.o problem6.o problem5.o problem4.o problem3.o problem2.o problem1.o shell.o
-	$(CC) shell.o problem1.o problem2.o problem3.o problem4.o problem5.o problem6.o problem7.o problem8.o problem9.o problem10.o problem11.o problem12.o problem13.o problem14.o problem15-20.o -o ProjectEulerShell
+shell: problem67.o problem15-20.o problem14.o problem13.o problem12.o problem11.o problem10.o problem9.o problem8.o problem7.o problem6.o problem5.o problem4.o problem3.o problem2.o problem1.o shell.o
+	$(CC) shell.o problem1.o problem2.o problem3.o problem4.o problem5.o problem6.o problem7.o problem8.o problem9.o problem10.o problem11.o problem12.o problem13.o problem14.o problem15-20.o problem67.o -o ProjectEulerShell
 
 shell.o: shell.cpp
 	$(CC) $(CFLAGS) shell.cpp
@@ -53,6 +53,9 @@ problem14.o: problem14.cpp
 
 problem15-20.o: problem15-20.cpp
 	$(CC) $(CFLAGS) problem15-20.cpp
+
+problem67.o: problem67.cpp
+	$(CC) $(CFLAGS) problem67.cpp
 
 clean:
 	rm *o *out ProjectEulerShell

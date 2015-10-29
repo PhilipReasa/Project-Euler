@@ -16,8 +16,9 @@
 #include "problem13.h"
 #include "problem14.h"
 #include "problem15-20.h"
+#include "problem67.h"
 
-#define LAST_PROBLEM_DONE 18
+#define LAST_PROBLEM_DONE 67
 
 
 int main();
