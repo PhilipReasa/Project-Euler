@@ -17,7 +17,8 @@
 #include "problem14.h"
 #include "problem15-20.h"
 
-#define LAST_PROBLEM_DONE 15
+#define LAST_PROBLEM_DONE 18
+
 
 int main();
 void displayInitialInfo();

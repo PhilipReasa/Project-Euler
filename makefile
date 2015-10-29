@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-c -Wall -pedantic
+CFLAGS=-c -std=c++11 -Wall -pedantic
 
 all: shell
 
